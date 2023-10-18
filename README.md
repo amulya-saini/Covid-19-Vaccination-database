@@ -1,1 +1,1 @@
-# Covid_19_db
+# Covid-19-vaccination-database
