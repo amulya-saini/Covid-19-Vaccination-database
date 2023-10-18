@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid19 website</title>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'styles.css')}}">
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+   <nav class="navbar">
+    <div class="navbar__container">
+        <a href="/" id="navbar__logo">COVID-19 DBMS</a>
+        <div class="navbar__toggle" id="mobile_menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+            <li class="navbar__item">
+                <a href="/" class="navbar__links">
+                    Home
+                </a>
+            </li>
+            <li class="navbar__btn">
+                <a href="/" class="button">
+                    Dashboard
+                </a>
+            </li>
+        </ul>
+    </div>
+   </nav>
+
+   <!--Hero section-->
+
+   <div class= "main">
+     <div class="main__container">
+        <div class="main__content">
+        <h1>COVID-19</h1>
+        <h2>DBMS</h2>
+        <p>Enter the details below</p>
+        <form method="POST" action="">
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" name="first_name"><br><br>
+            <label for="last_name">Last Name:</label>
+            <input type="text" id="last_name" name="last_name"><br><br>
+            <label for="id_number">ID Number:</label>
+            <input type="text" id="id_number" name="id_number"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+        </div>
+        <div class="main__img--container">
+            <img src="{{ url_for ('static', filename = 'images/undraw_sign_up_n6im.svg')}}" alt="pic" id="main__ing" style="opacity: 0.8; width:95%">
+        </div>
+     </div>
+   </div>
+
+   <script src="app.js"></script>
+
+</body>
+</html>
