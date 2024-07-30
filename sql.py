@@ -14,8 +14,8 @@ def index():
         # Connect to the database and find the matching value in the specified column
         conn = pymysql.connect(
             host='localhost',
-            user='root',
-            password='Qwer123$',
+            user='***',
+            password='***',
             database='vaccine_database',
             cursorclass=pymysql.cursors.DictCursor
         )
